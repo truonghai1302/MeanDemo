@@ -9,7 +9,7 @@ const app = express();
 mongoose
   .connect(
     "mongodb+srv://hai:GPwuQplA38ROi9xH@cluster0-fajd5.mongodb.net/test?retryWrites=true&w=majority",{ useNewUrlParser: true }
-    )
+  )
   .then(() => {
     console.log("Connected to database!");
   })
