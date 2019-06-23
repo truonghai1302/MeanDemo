@@ -9,9 +9,9 @@ const userRoutes = require("./routes/user");
 const app = express();
 
 mongoose
-  .connect(
-    "mongodb+srv://hai:GPwuQplA38ROi9xH@cluster0-fajd5.mongodb.net/test&w=majority",{ useNewUrlParser: true }
-    )
+  .connect(    
+    "mongodb+srv://hai:GPwuQplA38ROi9xH@cluster0-fajd5.mongodb.net/mean",{ useNewUrlParser: true }  
+  )
   .then(() => {
     console.log("Connected to database!");
   })
