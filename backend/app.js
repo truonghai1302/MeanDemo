@@ -10,8 +10,10 @@ const app = express();
 
 mongoose
   .connect(
-    "mongodb+srv://hai:GPwuQplA38ROi9xH@cluster0-fajd5.mongodb.net/mean",{ useNewUrlParser: true }  
-    )
+    "mongodb+srv://hai:" +
+      process.env.MONGO_ATLAS_PW +
+      "@cluster0-fajd5.mongodb.net/mean",{ useNewUrlParser: true }
+  )
   .then(() => {
     console.log("Connected to database!");
   })
